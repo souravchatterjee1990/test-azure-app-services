@@ -23,7 +23,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        npm cache clean --force
         npm install
+        npm run build
         npm run test
 
     - name: Upload artifact for deployment job
