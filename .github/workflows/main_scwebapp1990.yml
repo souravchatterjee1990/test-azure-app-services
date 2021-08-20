@@ -34,6 +34,6 @@ jobs:
       with:
         app-name: scwebapp1990
         slot-name: Production
-        publish-profile: ${{ AZURE_WEBAPP_PUBLISH_PROFILE }}
+        publish-profile: ${{ TEST_SECRET }}
         package: .
 
